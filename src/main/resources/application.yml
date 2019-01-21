@@ -1,0 +1,9 @@
+spring.security.user:
+  name: ${BASIC_AUTH_SECURITY_USER:davide}
+  password: ${BASIC_AUTH_SECURITY_PASSWORD:davide}
+
+spring.data.mongodb:
+  host: ${MONGO_HOST:localhost}
+  port: ${MONGO_PORT:27017}
+  user: ${MONGO_USER:}
+  secret: ${MONGO_PASSWORD:}
