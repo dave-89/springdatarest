@@ -9,4 +9,4 @@ COPY target/*.jar /opt/app/app.jar
 EXPOSE 8080
 
 WORKDIR /opt/app
-ENTRYPOINT java -jar /opt/app/app.jar
+ENTRYPOINT exec java $JAVA_OPTS  $D_OPTS $SPRING_OPTS -jar /opt/app/app.jar
